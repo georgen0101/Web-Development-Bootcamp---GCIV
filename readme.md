@@ -4,7 +4,7 @@ This repository will be for my notes from the course The Complete 2023 Web Devel
 
 ## What I will upload
 
-The next Files usign vscode:
+The next Files using vscode:
 
 - HTML file of the exercise
 - The CSS of the HMTL

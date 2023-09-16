@@ -381,4 +381,4 @@ footer {
 }
 ```
 
-![Alt text](<CleanShot 2023-09-15 at 18.18.38.gif>)
+![Alt text](./assets/images/vid2.gif)

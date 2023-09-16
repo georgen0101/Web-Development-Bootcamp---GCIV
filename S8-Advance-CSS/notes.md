@@ -179,7 +179,7 @@
 </html>
 ```
 
-![Alt text](<CleanShot 2023-08-28 at 13.23.08.png>)
+![Alt text](./assets/images/img3.png)
 
 ## Responsive Websites
 
@@ -249,12 +249,136 @@ TODO: Change the background color for each device
 </html>
 ```
 
-![Alt text](<CleanShot 2023-08-28 at 14.53.40.gif>)
+![Alt text](./assets/images/vid1.gif)
 
 ## Web Design Agency Website
 
 > Focused in practicing what we learn in this section.
 
-Use flex?
-floats
-display
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agency</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="main">
+      <img class="logo" src="./assets/images/logo.png" alt="logo" />
+      <h1>
+        We are a <span style="color: midnightblue;">Creative</span> <br />
+        Design Agency
+      </h1>
+      <div class="left card">
+        <img
+          class="tile-image"
+          src="./assets/images/beautiful.jpg"
+          alt="hand and flower in water"
+        />
+        <h2 class="card-title">Beauty</h2>
+        <p class="card-text">
+          We strive to create the most beautiful websites for all your needs.
+          Working closely with you to design and develop an amazing website for
+          your business.
+        </p>
+      </div>
+
+      <div class="right card">
+        <img
+          class="tile-image"
+          src="./assets/images/construction.jpg"
+          alt="metal structure"
+        />
+        <h2 class="card-title">Construction</h2>
+        <p class="card-text">
+          Built by our team of professional developers, we ensure the most
+          rigourous and modern websites. Built from scratch using HTML and CSS.
+          Only the best for you.
+        </p>
+      </div>
+    </div>
+    <footer>
+      <p>Create. Develop. Design.</p>
+    </footer>
+  </body>
+</html>
+```
+
+```css
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 50px 50px 0 50px;
+  background-color: #faf9f6;
+  display: flex;
+  flex-direction: column;
+  min-height: 95vh;
+}
+.main {
+  flex: 1;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+footer {
+  text-align: right;
+  clear: both;
+  color: midnightblue;
+}
+
+.tile-image {
+  float: left;
+  height: 200px;
+  padding-right: 50px;
+}
+
+.card {
+  display: inline-block;
+  width: 45%;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+@media (max-width: 680px) {
+  .logo {
+    height: 20px;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+    text-align: center;
+  }
+
+  .card {
+    width: 100%;
+    margin-bottom: 30px;
+    text-align: justify;
+  }
+
+  .tile-image {
+    padding-right: 0;
+    display: block;
+    width: 100%;
+    padding-bottom: 10px;
+    object-fit: cover;
+  }
+}
+```
+
+![Alt text](<CleanShot 2023-09-15 at 18.18.38.gif>)
